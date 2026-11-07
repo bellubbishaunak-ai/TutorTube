@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in — TutorTube</title>
+  <meta name="description" content="Sign in to TutorTube and continue learning AI and machine learning.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-brand">
+      <a href="/login.html" class="auth-logo"><span class="auth-logo-mark">▶</span><span>Tutor<span>Tube</span></span></a>
+      <p class="auth-kicker">A focused home for learning AI.</p>
+      <h1>Build your<br><em>knowledge graph.</em></h1>
+      <p class="auth-copy">Save your place, collect the best explanations, and keep your learning path close.</p>
+      <div class="auth-brand-grid"><span>AI / ML</span><span>CURATED</span><span>NO NOISE</span></div>
+    </section>
+
+    <section class="auth-card" aria-labelledby="formTitle">
+      <div class="auth-card-head">
+        <div class="auth-mode-switch"><button type="button" class="auth-mode active" data-auth-mode="signin">Sign in</button><button type="button" class="auth-mode" data-auth-mode="signup">Create account</button></div>
+        <h2 id="formTitle">Welcome back</h2>
+        <p id="formHint">Sign in to continue learning.</p>
+      </div>
+
+      <button type="button" id="googleSignIn" class="google-button"><span class="google-mark">G</span><span>Continue with Google</span></button>
+      <div class="auth-divider"><span>or continue with email</span></div>
+
+      <form id="emailAuthForm" novalidate>
+        <label id="nameField" hidden>Display name<input id="displayName" type="text" autocomplete="name" placeholder="Shaunak"></label>
+        <label>Email<input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label>Password<input id="password" type="password" autocomplete="current-password" placeholder="At least 6 characters" minlength="6" required></label>
+        <button type="submit" id="emailSubmit" class="auth-submit">Sign in with email</button>
+      </form>
+      <a href="#" id="forgotPassword" class="forgot-password">Forgot password?</a>
+      <p id="authStatus" class="auth-status" role="status"></p>
+      <div id="verificationNotice" class="verification-notice" hidden><strong>Check your inbox.</strong><span>Open the TutorTube verification email, then return here to sign in.</span></div>
+      <p class="auth-legal">By continuing, you agree to use TutorTube for personal learning.</p>
+    </section>
+  </main>
+  <footer class="auth-footer">Made by Shaunak Bellubbi</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

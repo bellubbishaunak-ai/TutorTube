@@ -1,0 +1,14 @@
+{
+  "name": "tutortube",
+  "version": "1.0.0",
+  "description": "A focused YouTube-style learning library for AI, ML, and data science",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "fetch-videos": "node scripts/fetch-videos.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "compression": "^1.7.4"
+  }
+}
