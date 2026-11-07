@@ -1,9 +1,3 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "express",
-  "functions": {
-    "server.js": {
-      "includeFiles": "data/videos.json"
-    }
-  }
+  "$schema": "https://openapi.vercel.sh/vercel.json"
 }
